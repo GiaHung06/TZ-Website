@@ -1,0 +1,12 @@
+{
+  "name": "japansport",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "sass --watch --no-source-map sass:assets/css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.51.0"
+  }
+}

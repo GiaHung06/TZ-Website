@@ -1,0 +1,129 @@
+
+<div class="l-header">
+	<div class="l-header__navbar">
+		<div class="l-header__navbar__img">
+			<img src="./assets/img/index/logo.svg" alt="Logo_Techzen">
+		</div>
+		<div class="l-header__navbar__content">
+			<a class="page-scroll" href="#about-us">Về chúng tôi</a>
+			<a class="page-scroll" href="#bsn-ctn">Nội dung kinh doanh</a>
+			<a class="page-scroll" href="#we">Chúng tôi có gì</a>
+			<a class="page-scroll" href="#outsource">Mô hình phát triển</a>
+			<a class="page-scroll" href="#security">Quản lý bảo mật</a>
+			<a class="page-scroll" href="#platform">Platform giáo dục</a>
+		</div>
+		
+		<div class="dropdown-icon">
+			<div class="dropdown-icon__menu">
+				<a class="flex" href="#">
+					<i class="fa-solid fa-bars"></i>
+				</a>
+				<ul class="dropdown-icon__menu__list">
+					<div class="dropdown-icon__menu__list--hiden">
+						<li><a href="#work">Hoạt động của Techzen</a></li>
+						<li><a href="#staff">Nhân viên nói gì</a></li>
+						<li><a href="tel:(+84)236 6281189">Liên hệ</a></li>
+					</div>
+				</ul>
+			</div>
+		</div>
+		<!-- <div class="dropdown-container">
+			<label for="openDropdown" class="dropdown">
+				<i class="fa-solid fa-globe"></i>
+				Tiếng Việt
+				<i class="fa-solid fa-angle-down"></i>
+			</label>
+			
+			<input type="checkbox" id="openDropdown" hidden>
+		
+			<div class="dropdown-menu">
+				<span>Item 1</span>
+				<span>Item 2</span>
+				<span>Item 3</span>
+				<span>Item 4</span>
+			</div>
+		</div> -->
+		<div class="dropdowns">
+			<div class="dropdowns__menu">
+				<a class="flex" href="#">
+					<i class="fa-solid fa-globe"></i>
+					Tiếng Việt
+					<i class="fa-solid fa-angle-down"></i>
+				</a>
+				<ul class="dropdowns__menu__list">
+					<div class="dropdowns__menu__list--hiden">
+						<li><a target="_blank" href="#">English</a></li>
+						<li><a target="_blank" href="#">日本語</a></li>
+					</div>
+				</ul>
+			</div>
+		</div>
+		
+		<a href="tel:(+84)236 6281189" class="phone">
+			<i class="fa-solid fa-phone"></i>
+			<p>Điện thoại</p>
+		</a>
+	</div>
+	
+	<!-- Mobi -->
+	<div class="menu-mb">
+		<div class="menu-mb__left">
+			<img src="./assets/img/index/logo.svg" alt="">
+		</div>
+		<div class="menu-mb__right">
+			<a href="tel:(+84)236 6281189" class="menu-mb__right--phone">
+				<i class="fa-solid fa-phone"></i>
+			</a>
+			<div class="menu-mb__right--mb">
+				<input type="checkbox" id="navi-toggle" class="checkbox" />
+				<label for="navi-toggle" class="button">
+					<span class="icon">&nbsp;</span>
+				</label>
+				
+				<nav class="nav" id="nav-mb">
+					<ul class="list">
+						<li class="item"> <a class="link" id="link-mb" href="#about-us" >Về chúng tôi</a> </li>
+						<li class="item"> <a class="link" id="link-mb" href="#bsn-ctn">Nội dung kinh doanh</a> </li>
+						<li class="item"> <a class="link" id="link-mb" href="#we">Chúng tôi có gì</a> </li>
+						<li class="item"> <a class="link" id="link-mb" href="#outsource">Mô hình phát triển</a> </li>
+						<li class="item"> <a class="link" id="link-mb" href="#security">Quản lý bảo mật</a> </li>
+						<li class="item"> <a class="link" id="link-mb" href="#platform">Platform giáo dục</a> </li>
+						<li class="item"> <a class="link" id="link-mb" href="#work">Hoạt động của Techzen</a> </li>
+						<li class="item"> <a class="link" id="link-mb" href="#staff">Nhân viên nói gì</a> </li>
+						<li class="item"> <a class="link" id="link-mb" href="tel:(+84)236 6281189">Liên hệ</a> </li>
+					</ul>
+					<div class="nav--line"></div>
+					<div class="nav--language">
+						<p class="nav--language__title">
+							Ngôn ngữ:
+						</p>
+						<div class="nav--language__text">
+							<a href="">Tiếng Việt</a>
+							<a href="">English</a>
+							<a href="">日本語</a>
+						</div>
+					</div>
+				</nav>
+			</div>
+			<!-- <div class="menu-mb__right--mb2">
+				<i class="fa-solid fa-bars"></i>
+				<div class="nav2">
+
+				</div>
+			</div> -->
+		</div>
+	</div>
+
+</div>
+<script>
+	// function toggle_div_fun(id) {
+	// 	var divelement = document.getElementById(id);
+	// 	if(divelement.style.display == 'none')
+	// 		divelement.style.display = 'block';
+	// 	else
+	// 		divelement.style.display = 'none';
+	// }
+	$('.link').on('click', function() {
+		$('.checkbox').prop('checked', false);
+	});
+</script>

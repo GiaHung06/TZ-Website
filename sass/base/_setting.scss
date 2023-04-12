@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+// ============================================================
+// Setting
+// ============================================================
+
+// 「True」 for HTML5
+$html5 : true;
+
+// compass browser support
+$legacy-support-for-ie6 : true;
+$legacy-support-for-ie7 : true;
+
+$experimental-support-for-webkit : true;
+$experimental-support-for-mozilla : true;
+$experimental-support-for-opera : true;
+$experimental-support-for-microsoft : true;
+$experimental-support-for-khtml : false;
+
+// ie9 for svg
+$experimental-support-for-svg: true;
+
+// image path
+$imgPath : "../img/";
+
+// Overall width of the page
+$baseWidth : 950px;
+
+// font
+$fontSarabun: 'Sarabun', sans-serif;
+$fontArchivo: 'Archivo', sans-serif;
+$fontNotoSan: 'Noto Sans JP', sans-serif;;
+$fontOswald: 'Oswald', sans-serif;
+$fontNotoSerif: "Noto Serif JP", serif;
+
+//boder
+$border-image-color: #fd4942;
+$border-width: .2rem;
+
+
+// Standard line spacing
+$lineHeight : 100%;
+$lineHeightText:1.6;
+$lineHeightText2:1.8;
+
+// Color
+$color_title: #fd4941;
+$color_black: #000;
+$color_white: #fff;
+$color_background: #1A2351E6;
+$color_background_btn: #bfdffe;
+
+// ============================================================
+// common
+// ============================================================
+
+body{
+	color: $color_black;
+	font-family: $fontSarabun;
+	background-color: #fff;
+	font-feature-settings: "halt" 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-weight: 400;
+}//body
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+a{
+	color: $color_black;
+	text-decoration: none;
+	transition: all .1s ease;
+	
+	&:hover{
+		opacity: .6;
+	}//hover
+}//a
+
+img {
+	width: 100%;
+	vertical-align: bottom;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+table {
+	width:100%;
+}
+input {
+	-webkit-appearance: none;
+}
+a:focus,
+input:focus {
+	outline: none;
+}
+section:nth-child(even){
+	background-color: #010C2B;
+}
+section:nth-child(odd){
+	background-color: #01091F;
+}

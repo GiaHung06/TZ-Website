@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+//----------------------------------------------------------------
+// Responsive
+//----------------------------------------------------------------
+
+@mixin maxWidth($width) {
+	@media only screen and (max-width: $width) {
+		@content;
+	}
+}
+
+@mixin minWidth($width) {
+	@media only screen and (min-width: $width) {
+		@content;
+	}
+}
+
+@mixin maxHeight($height) {
+	@media only screen and (max-height: $height) {
+		@content;
+	}
+}
+
+@mixin minHeight($height) {
+	@media only screen and (min-height: $height) {
+		@content;
+	}
+}
+
+@mixin rangeWidth($minWidth, $maxWidth){
+	@media only screen and (min-width: $minWidth) and (max-width: $maxWidth){
+		@content;
+	}
+}
